@@ -1,0 +1,387 @@
+.frame-child35 {
+  height: 104px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.ai-tool12 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  white-space: nowrap;
+  z-index: 1;
+}
+.ai-tool-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs) 0 0;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-nico-moji);
+}
+.about13 {
+  position: relative;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.about-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.skin-health-a-z12 {
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+}
+.skin-health-a-z-wrapper4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.clinical-solution12 {
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+}
+.clinical-solution-wrapper4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.about-inner,
+.rectangle-parent37 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangle-parent37 {
+  flex: 1;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  justify-content: space-between;
+  padding: var(--padding-12xl) var(--padding-178xl) var(--padding-6xl)
+    var(--padding-169xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+}
+.about-inner {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 536px;
+}
+.built-for-you {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.built-for-you-by-the-ai-engine-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-58xl) 0 var(--padding-57xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.doctor-clipboard-01-hzstehha-1-icon4 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.doctor-clipboard-01-hzstehha-1-wrapper {
+  height: 733px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 359px 0 0;
+  box-sizing: border-box;
+}
+.image-recognition {
+  font-family: var(--font-bellota-text);
+}
+.image-recognition-identify-sk {
+  margin: 0;
+}
+.treatment-recommendations {
+  font-family: var(--font-bellota-text);
+}
+.treatment-recommendations-sug {
+  margin: 0;
+}
+.patient-education {
+  font-family: var(--font-bellota-text);
+}
+.patient-education-offer-resou {
+  margin: 0;
+}
+.research-support {
+  font-family: var(--font-bellota-text);
+}
+.research-support-assist-in-re {
+  margin: 0;
+}
+.telemedicine-support {
+  font-family: var(--font-bellota-text);
+}
+.telemedicine-support-facilita {
+  margin: 0;
+}
+.follow-up-monitoring {
+  font-family: var(--font-bellota-text);
+}
+.follow-up-monitoring-track-th {
+  margin: 0;
+}
+.image-recognition-identify-container {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: calc(100% - 302px);
+  z-index: 1;
+}
+.frame-parent28 {
+  width: 1161px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: 127px;
+  max-width: 100%;
+}
+.frame-child36 {
+  height: 253px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-darkslateblue);
+  display: none;
+  max-width: 100%;
+}
+.about14,
+.ai-tool13 {
+  position: relative;
+  z-index: 1;
+}
+.ai-tool13 {
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-nico-moji);
+}
+.about14 {
+  display: inline-block;
+  min-width: 55px;
+  cursor: pointer;
+}
+.about-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.skin-health-a-z13 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.skin-health-a-z-wrapper5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.clinical-solution13 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.clinical-solution-wrapper5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.frame-parent27,
+.rectangle-parent38 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  text-align: left;
+}
+.rectangle-parent38 {
+  background-color: var(--color-darkslateblue);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-16xl) var(--padding-178xl) var(--padding-16xl)
+    var(--padding-183xl);
+  box-sizing: border-box;
+  min-height: 253px;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-chau-philomene-one);
+}
+.frame-parent27 {
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-bellota-text);
+}
+.frame-parent26,
+.waves-qfantaok-1-icon4 {
+  align-self: stretch;
+  max-width: 100%;
+  margin-top: -466px;
+}
+.frame-parent26 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 21px;
+  text-align: center;
+  font-size: var(--font-size-51xl);
+  color: var(--color-black);
+  font-family: var(--font-alata);
+}
+.waves-qfantaok-1-icon4 {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.about12 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 1277px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-chau-philomene-one);
+}
+@media screen and (max-width: 1125px) {
+  .frame-parent28 {
+    gap: 63px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .built-for-you {
+    font-size: var(--font-size-37xl);
+  }
+  .image-recognition-identify-container {
+    font-size: var(--font-size-7xl);
+  }
+  .ai-tool13 {
+    font-size: var(--font-size-13xl);
+  }
+  .rectangle-parent38 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangle-parent37 {
+    padding-left: var(--padding-75xl);
+    padding-right: var(--padding-79xl);
+    box-sizing: border-box;
+  }
+  .about-inner {
+    padding-bottom: 348px;
+    box-sizing: border-box;
+  }
+  .built-for-you-by-the-ai-engine-wrapper {
+    padding-left: var(--padding-19xl);
+    padding-right: var(--padding-19xl);
+    box-sizing: border-box;
+  }
+  .doctor-clipboard-01-hzstehha-1-wrapper {
+    display: none;
+    padding-top: 486px;
+    box-sizing: border-box;
+  }
+  .image-recognition-identify-container {
+    max-width: 100%;
+  }
+  .frame-parent28 {
+    gap: 32px;
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .rectangle-parent38 {
+    padding-left: var(--padding-82xl);
+    padding-right: var(--padding-79xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangle-parent37 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .built-for-you {
+    font-size: var(--font-size-23xl);
+  }
+  .image-recognition-identify-container {
+    font-size: var(--font-size-lgi);
+  }
+  .frame-parent28 {
+    gap: var(--gap-base);
+  }
+  .ai-tool13 {
+    font-size: var(--font-size-5xl);
+  }
+  .about14,
+  .clinical-solution13 {
+    font-size: var(--font-size-lgi);
+  }
+  .rectangle-parent38 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
