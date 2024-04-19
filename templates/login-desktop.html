@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Tool</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://img.freepik.com/free-vector/national-doctor-s-day-hand-drawn-background_23-2149438164.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background: #363dc1;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    .container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    h1 {
+        font-family: 'Arial Black', sans-serif;
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .button {
+    display: inline-block;
+    padding: 12px 30px; /* Adjust padding for button size */
+    margin: 10px; /* Adjust margin for button spacing */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+    .button:hover {
+        opacity: 0.9;
+    }
+
+    .button-blue {
+        background-color: #1e90ff;
+    }
+
+    .button-green {
+        background-color: #4caf50;
+        font-size: 16px;
+    }
+
+
+    .button-google {
+        background-color: #4285F4;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .button-google:hover {
+        background-color: #357ae8;
+    }
+
+    .button-modal {
+        background-color:#ce2cd0;
+    }
+
+    .button-modal:hover {
+        background-color:#bc6bbd;
+    }
+
+    .button-orange {
+        background-color: #ff5722;
+    }
+
+    .button-last {
+        background-color: #6c757d;
+    }
+
+    .button-signup {
+        background-color: #ff8c00;
+    }
+
+    hr {
+        border: none;
+        border-top: 2px solid #1e90ff;
+        width: 50%;
+        margin: 40px auto;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        max-width: 400px;
+        border-radius: 5px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 2px solid #ccc;
+    }
+
+    .success-popup {
+        background-color: #4caf50;
+        color: #fff;
+    }
+
+    .error-popup {
+        background-color: #f44336;
+        color: #fff;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+    }
+    .button-reset-password {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f44336; /* Red color for danger */
+    color: #fff;
+    border: none;
+}
+
+.button-reset-password:hover {
+    background-color: #ff6659; /* Lighter shade of red on hover */
+    opacity: 0.9;
+}
+.slide-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #363dc1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.slide-panel a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.slide-panel a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.slide-panel .close-slide-panel {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* CSS for the sign-in button */
+button[type="button"] {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #007bff; /* Darker shade of blue on hover */
+}
+
+
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="active"><i class="fas fa-brain"></i> AI-Tool</a>
+    <a href="#"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#"><i class="fas fa-user-md"></i> Skin Health A-Z</a>
+    <a href="#"><i class="fas fa-clinic-medical"></i> Clinical Solution</a>
+    <!-- <a href="#"><i class="fas fa-bars"></i></a> -->
+    <a href="javascript:void(0);" onclick="openSlidePanel()"><i class="fas fa-bars"></i></a>
+  </nav>
+  <!-- Slide Panel -->
+<div id="slidePanel" class="slide-panel">
+  <a href="javascript:void(0);" class="close-slide-panel" onclick="closeSlidePanel()">&times;</a>
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="javascript:void(0);" id="signOutButton" style="display: none;" onclick="signOut()"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+</div>
+
+
+<div class="container">
+    <h1 style="font-family: 'Arial Black', sans-serif; color: #333;">Join Today</h1>
+    <button id="signInWithGoogleButton" class="button button-google" onclick="signInWithGoogle()"><i class="fab fa-google"></i> Continue with Google</button>
+    <br> <!-- Add a line break to separate buttons -->
+    <button onclick="openSignupModal()" class="button button-green"><i class="fas fa-user-plus"></i> Register Now</button>
+    <hr>
+    <p style="color: #555;"><strong>Already have an account?</strong></p>
+    <button onclick="openModal('emailSignInModal')" class="button button-modal"><i class="fas fa-envelope"></i> Sign in with Email</button>
+    <button onclick="openModal('forgotPasswordModal')" class="button button-last"><i class="fas fa-key"></i> Forgot Password</button>
+</div>
+
+<!-- Modal for Forgot Password -->
+<div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('forgotPasswordModal')">&times;</span>
+        <h2 style="color: #333;">Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="forgotPasswordEmail" placeholder="Enter Email" required><br><br>
+            <button type="button" onclick="sendPasswordResetEmail()" class="button button-reset-password"><i class="fas fa-key"></i> Reset Password</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for email sign-in -->
+<div id="emailSignInModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('emailSignInModal')">&times;</span>
+      <h2 style="color: #333;">Sign in with Email</h2>
+      <form>
+          <input type="email" id="emailSignInInput" placeholder="Enter Email" required><br><br>
+          <input type="password" id="passwordSignInInput" placeholder="Enter Password" required><br><br>
+          <button type="button" onclick="loginWithEmail()"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+          <p id="signInError" style="color: red; display: none;">Email or password is incorrect.</p> <!-- Error message element -->
+      </form>
+  </div>
+</div>
+
+<!-- Your existing HTML code -->
+
+
+<!-- Modal for Facebook sign-in -->
+<div id="facebookModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('facebookModal')">&times;</span>
+        <h2 style="color: #333;">Continue with Facebook</h2>
+        <p>Facebook login modal content goes here...</p>
+    </div>
+</div>
+
+<!-- Modal for Signup -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('signupModal')">&times;</span> <!-- This is the close button -->
+      <h2>Signup Form</h2>
+      <form id="registrationForm">
+          <input type="text" placeholder="Name" id="fullName">
+          <input type="email" placeholder="Email" id="email">
+          <input type="password" placeholder="Password" id="password">
+          <button type="button" onclick="signUpWithEmail()" class="button button-signup">Sign Up</button>
+
+      </form>
+  </div>
+</div>
+
+
+<!-- Popup for Success -->
+<div id="successPopup" class="popup success-popup">
+  <span class="close" onclick="closePopup('successPopup')">&times;</span>
+  <p>Registration Successful!</p>
+</div>
+
+<!-- Popup for Error -->
+<div id="errorPopup" class="popup error-popup">
+  <span class="close" onclick="closePopup('errorPopup')">&times;</span>
+  <p id="errorPopupMessage">Registration Unsuccessful. Please try again.</p>
+</div>
+<!-- Popup for User Already Exists -->
+<div id="userExistsPopup" class="popup error-popup">
+  <span class="close" onclick="closePopup('userExistsPopup')">&times;</span>
+  <p>User already exists. Please sign in instead.</p>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+<script>
+  // Your Firebase configuration
+  const firebaseConfig = {
+  apiKey: "AIzaSyDeB_1LPomHgz_LEC2D_e7w4FPMbXMEkZs",
+  authDomain: "info-d7085.firebaseapp.com",
+  databaseURL: "https://info-d7085-default-rtdb.firebaseio.com",
+  projectId: "info-d7085",
+  storageBucket: "info-d7085.appspot.com",
+  messagingSenderId: "548306956267",
+  appId: "1:548306956267:web:3209ecc75bb37f9f2ab3ae",
+  measurementId: "G-EZ0JYHE7S6"
+};
+
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  
+ // Function to handle successful authentication with Google
+ function signInWithGoogle() {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        auth.signInWithPopup(provider)
+            .then((result) => {
+                // Google sign-in successful, redirect to photo.html
+                window.location.href = "ai_page.html";
+            })
+            .catch((error) => {
+                // Handle errors here
+                console.error('Google sign-in error:', error);
+            });
+    }
+
+
+     // Function to handle successful authentication with Facebook
+     function signInWithFacebook() {
+        const provider = new firebase.auth.FacebookAuthProvider();
+        auth.signInWithPopup(provider)
+            .then((result) => {
+                // Facebook sign-in successful, redirect to photo.html
+                window.location.href = "ai_page.html";
+            })
+            .catch((error) => {
+                // Handle errors here
+                console.error('Facebook sign-in error:', error);
+            });
+    }
+
+    // Function to handle successful authentication with email
+    function loginWithEmail() {
+        const email = document.getElementById("emailSignInInput").value;
+        const password = document.getElementById("passwordSignInInput").value;
+        auth.signInWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Email sign-in successful, redirect to photo.html
+                window.location.href = "ai_page.html";
+                clearForm('emailSignInModal'); // Clear form after successful login
+            })
+            .catch((error) => {
+                // Handle errors here
+                console.error('Email sign-in error:', error);
+                displaySignInError(error.message); // Display error message
+            });
+    }
+
+// Function to display sign-in error message in a pop-up
+function displaySignInError() {
+    const errorMessage = "INVALID LOGIN CREDENTIALS";
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'close';
+    closeBtn.innerHTML = '&times;';
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '10px'; // Adjust this value to position the close button vertically
+    closeBtn.style.left = '10px'; // Adjust this value to position the close button horizontally
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    };
+    
+    const errorMessageElement = document.createElement('p');
+    errorMessageElement.innerText = errorMessage;
+    errorMessageElement.style.textAlign = 'center';
+    errorMessageElement.style.fontWeight = 'bold';
+    
+    const closeButton = document.createElement('button');
+    closeButton.innerText = 'Close';
+    closeButton.onclick = function() {
+        modal.style.display = 'none';
+    };
+    
+    modalContent.appendChild(closeBtn);
+    modalContent.appendChild(errorMessageElement);
+    modalContent.appendChild(closeButton);
+    modal.appendChild(modalContent);
+    
+    document.body.appendChild(modal);
+    modal.style.display = 'block';
+}
+    // Function to clear form after successful processing
+    function clearForm(modalId) {
+        const modal = document.getElementById(modalId);
+        const inputs = modal.getElementsByTagName('input');
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].value = ''; // Clear input values
+        }
+        const errorElement = document.getElementById("signInError");
+        errorElement.style.display = "none"; // Hide error message
+    }
+
+
+  // Function to handle email sign-up
+  function signUpWithEmail() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Registration successful
+                var user = userCredential.user;
+                console.log('User registered successfully:', user);
+                closeAndClearForm('signupModal'); // Close modal and clear form
+                openPopup('successPopup'); // Display success pop-up
+            })
+            .catch((error) => {
+                // Handle registration errors
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode === 'auth/email-already-in-use') {
+                    closeAndClearForm('signupModal'); // Close modal and clear form
+                    openPopup('userExistsPopup'); // Display user already registered error pop-up
+                } else {
+                    // Handle other errors
+                    closeAndClearForm('signupModal'); // Close modal and clear form
+                    handleUnsuccessfulRegistration(errorMessage);
+                }
+            });
+    }
+
+ 
+// Function to handle unsuccessful registration
+function handleUnsuccessfulRegistration(errorMessage) {
+    // Display error message in the error pop-up
+    var errorPopupMessage = document.getElementById("errorPopupMessage");
+    errorPopupMessage.innerText = errorMessage;
+    openPopup('errorPopup'); // Display error pop-up
+}
+  // Function to open modal
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+  }
+
+  // Function to close modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    } else {
+        console.error("Modal element not found.");
+    }
+}
+
+  // Function to open pop-up
+function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) {
+        popup.style.display = "block";
+    } else {
+        console.error("Popup element not found with ID:", popupId);
+    }
+}
+
+
+  // Function to close pop-up
+  function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = "none";
+  }
+// Event listener for form submission
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            signUpWithEmail();
+        });
+
+         // Event listener to close modal when clicking outside
+         window.onclick = function(event) {
+            if (event.target.classList.contains("modal")) {
+                const modalId = event.target.id;
+                closeModal(modalId);
+            }
+        }
+
+   // Function to open signup modal
+   function openSignupModal() {
+            var modal = document.getElementById("signupModal");
+            modal.style.display = "block";
+        }
+
+// Function to send password reset email
+function sendPasswordResetEmail() {
+    const email = document.getElementById("forgotPasswordEmail").value;
+    auth.sendPasswordResetEmail(email)
+        .then(() => {
+            const successMessage = "Your password reset email has been sent successfully!";
+            console.log(successMessage);
+            displayPopup(successMessage, "successPopup");
+        })
+        .catch((error) => {
+            const errorMessage = error.message || "Oops! Something went wrong while sending the password reset email. Please try again.";
+            console.error("Error sending password reset email:", errorMessage);
+            displayPopup(errorMessage, "errorPopup");
+        });
+}
+// Function to display pop-up message
+function displayPopup(message, popupId) {
+    const popup = document.getElementById(popupId);
+    const popupMessage = popup.querySelector("p");
+    popupMessage.innerText = message;
+    popup.style.display = "block";
+}
+
+ // Function to handle sign out
+ function signOut() {
+            firebase.auth().signOut().then(function() {
+                // Sign-out successful, redirect to index.html
+                window.location.href = "index.html";
+            }).catch(function(error) {
+                // An error happened.
+                console.error("Sign out error:", error);
+            });
+        }
+
+   // Function to open slide panel
+   function openSlidePanel() {
+            document.getElementById("slidePanel").style.width = "250px";
+        }
+
+        // Function to close slide panel
+        function closeSlidePanel() {
+            document.getElementById("slidePanel").style.width = "0";
+        }
+        // Function to close modal and clear form
+function closeAndClearForm(modalId) {
+    closeModal(modalId); // Close the modal
+    const modal = document.getElementById(modalId);
+    const inputs = modal.getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = ''; // Clear input values
+    }
+    const errorElement = document.getElementById("signInError");
+    if (errorElement) {
+        errorElement.style.display = "none"; // Hide error message if it exists
+    }
+}
+
+</script>
+
+</body>
+</html>

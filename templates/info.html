@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <style>
+        .header {
+        background-color: dodgerblue; /* Green header background */
+        text-align: center;
+        padding: 10px;
+        position: relative;
+      }
+      .main-text {
+        color: white;
+      }
+      .disease-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(300px, 1fr)
+        ); /* Adjust column width as needed */
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .disease-card {
+        border: 1px solid #ddd;
+        box-shadow: 5px 5px dodgerblue;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5%;
+        background-color: #f9f9f9;
+      }
+
+      .disease-image {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 5%;
+      }
+
+      h2 {
+        font-size: 20px;
+        /* margin: 10px 0; */
+      }
+      .home {
+        position: absolute;
+        top: 23%;
+        left: 2%;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+      button{
+        border-radius: 30%;
+        border: solid black;
+        background-color: dodgerblue;
+        padding: 6px;
+        margin: 2px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dermatological Disease Information</h1>
+    </div>
+    <div class="disease-grid">
+      <!-- Disease 1 -->
+      <div class="disease-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8dbNyg96UzmmOepiwtOIw009EK5WR-wWVQ&s"
+          alt="Melanoma Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Melanoma</h2>
+            <button><a href="Melanomaa.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 2 -->
+      <div class="disease-card">
+        <img
+          src="https://mydermspecialists.com/wp-content/uploads/2021/03/conditions_is1210765910.jpg"
+          alt="Squamous cell carcinoma Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Squamous Cell Carcinoma</h2>
+            <button><a href="SquamousCellCarcinoma.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 3 -->
+      <div class="disease-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49FV3jy-iPG78CzBAE15YrRQle-l9eQKmTQ&s"
+          alt="Tinea Ringworm Candidiasis Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Tinea Ringworm Candidiasis</h2>
+            <button><a href="TineaRingwormCandidiasis.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 4 -->
+      <div class="disease-card">
+        <img
+          src="https://www.researchgate.com/publication/322341299/figure/fig1/AS:961825160052761@1606328396832/Examples-of-vascular-structures-seen-in-dermoscopic-images-of-skin-lesions-a-linear-b.gif"
+          alt="Vascular Lesion Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Vascular Lesion</h2>
+            <button><a href="Vascularlesion.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 5 -->
+      <div class="disease-card">
+        <img
+          src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/24299-atopic-dermatitis"
+          alt="Atopic Dermatitis Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Atopic Dermatitis</h2>
+            <button><a href="AtopicDermatitis.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 6 -->
+      <div class="disease-card">
+        <img
+          src="https://www.scientificanimations.com/wp-content/uploads/2020/07/3D-Medical-Animation-Still-Shot-Depicting-Actinic-Keratosis.jpg"
+          alt="Actinic Keratosis Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Actinic Keratosis</h2>
+            <button><a href="ActinicKeratosis.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 7 -->
+      <div class="disease-card">
+        <img
+          src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2332499.jpg"
+          alt="Benign keratosis Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Benign Keratosis</h2>
+            <button><a href="BenignKeratosis.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 8 -->
+      <div class="disease-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVm5QIo4u0cKIdspt6Kni3WZ94eatuvVxEjKgzZ4cIQ&s"
+          alt="Dermatofibroma Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Dermatofibroma</h2>
+            <button><a href="Dermatofibroma.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Disease 9 -->
+      <div class="disease-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMO9PwAjh1BrlakSSvgiu-IclmInjze7ZdMfuHRlrEN48EkGe_U3YnVnKaUcIm3DLGj4&usqp=CAU"
+          alt="Melanocytic nevus Images"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Melanocytic Nevus</h2>
+            <button><a href="MelanocyticNevus.html">View More Information</a></button>
+        </div>
+      </div>
+      <!-- Additional Disease -->
+      <div class="disease-card">
+        <img
+          src="https://images-prod.healthline.com/hlcmsresource/images/topic_centers/lyme-disease/642x361_Is_It_Lyme_Disease_IMAGE_4.jpg"
+          alt="Chronic Lyme Disease Image"
+          class="disease-image"
+        />
+        <div class="disease-details">
+            <h2>Chronic Lyme Disease</h2>
+            <button><a href="ChronicLymeDisease.html">View More Information</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

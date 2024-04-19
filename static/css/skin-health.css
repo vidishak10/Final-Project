@@ -1,0 +1,333 @@
+.frame-child37 {
+  height: calc(100% - 61px);
+  width: 1440px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 61px;
+  left: -65px;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+}
+.ai-tool14 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+}
+.ai-tool-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs) 0 0;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-nico-moji);
+}
+.about15 {
+  position: relative;
+  display: inline-block;
+  min-width: 55px;
+  cursor: pointer;
+  z-index: 1;
+}
+.about-wrapper3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.skin-health-a-z14 {
+  position: relative;
+  z-index: 1;
+}
+.skin-health-a-z-wrapper6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.clinical-solution14 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.clinical-solution-wrapper6,
+.rectangle-parent39 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+}
+.rectangle-parent39 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-4xl) 191px var(--padding-6xl) 194px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 165px;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-chau-philomene-one);
+}
+.your-complete-guide {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: var(--font-alata);
+}
+.find-information-from {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.find-information-from-experts-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-13xl);
+}
+.httpswwwskinhealthinfoorg {
+  position: relative;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.httpswwwskinhealthinfoorg-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-25xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-5xl);
+  color: #0b49e9;
+}
+.your-complete-guide-to-skin-he-parent {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+}
+.skin-health-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-178xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-51xl);
+  color: var(--color-black);
+  font-family: var(--font-bellota-text);
+}
+.waves-qfantaok-1-icon5 {
+  height: 213px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.doctor-clipboard-01-hzstehha-1-icon5 {
+  height: 374px;
+  width: 175px;
+  position: absolute;
+  margin: 0 !important;
+  top: -161px;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.waves-qfantaok-1-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 100%;
+}
+.frame-child38 {
+  height: 253px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-darkslateblue);
+  display: none;
+  max-width: 100%;
+}
+.about16,
+.ai-tool15 {
+  position: relative;
+  z-index: 1;
+}
+.ai-tool15 {
+  margin: 0;
+  font-size: var(--font-size-21xl);
+  font-weight: 400;
+  font-family: var(--font-nico-moji);
+}
+.about16 {
+  display: inline-block;
+  min-width: 55px;
+  cursor: pointer;
+}
+.about-wrapper4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.skin-health-a-z15 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.skin-health-a-z-wrapper7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.clinical-solution15 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.clinical-solution-wrapper7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.rectangle-parent40,
+.skin-health {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.rectangle-parent40 {
+  align-self: stretch;
+  background-color: var(--color-darkslateblue);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-16xl) var(--padding-178xl) var(--padding-16xl)
+    var(--padding-183xl);
+  min-height: 253px;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-chau-philomene-one);
+}
+.skin-health {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .rectangle-parent39,
+  .rectangle-parent40 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 975px) {
+  .ai-tool14 {
+    font-size: var(--font-size-13xl);
+  }
+  .rectangle-parent39 {
+    padding-left: 97px;
+    padding-right: 95px;
+    box-sizing: border-box;
+  }
+  .your-complete-guide {
+    font-size: var(--font-size-37xl);
+  }
+  .httpswwwskinhealthinfoorg-wrapper {
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+  .your-complete-guide-to-skin-he-parent {
+    gap: var(--gap-5xl);
+  }
+  .ai-tool15 {
+    font-size: var(--font-size-13xl);
+  }
+  .rectangle-parent40 {
+    padding-left: var(--padding-82xl);
+    padding-right: var(--padding-79xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .skin-health-inner {
+    padding-bottom: var(--padding-109xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ai-tool14 {
+    font-size: var(--font-size-5xl);
+  }
+  .about15,
+  .clinical-solution14 {
+    font-size: var(--font-size-lgi);
+  }
+  .rectangle-parent39 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .your-complete-guide {
+    font-size: var(--font-size-23xl);
+  }
+  .httpswwwskinhealthinfoorg {
+    font-size: var(--font-size-lgi);
+  }
+  .ai-tool15 {
+    font-size: var(--font-size-5xl);
+  }
+  .about16,
+  .clinical-solution15,
+  .skin-health-a-z15 {
+    font-size: var(--font-size-lgi);
+  }
+  .rectangle-parent40 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
